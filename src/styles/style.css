@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    background-image: url(../images/ground.jpg);
+    height: 20vh;
+    background-repeat: repeat-x;
+    animation-name: body;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+
+}
+/* @keyframes body{
+    to {
+        background-position: -5500px 0;
+    }
+} */
+.container{
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+.chasis1{
+    width: 250px;
+    height: 90px;
+    border: 2px solid black;
+    background-color: #ffff00;
+    border-radius: 8px;
+    position: relative;
+    top: 70px;
+}
+.windows{
+    width: 220px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid black; */
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+.windows1{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #e6ffff;
+    border-radius: 4px;
+}
+.windows2{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #e6ffff;
+    border-radius: 4px;
+}
+.windows3{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #e6ffff;
+    border-radius: 4px;
+}
+.windows4{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #e6ffff;
+    border-radius: 4px;
+}
+.line1{
+    width: 180px;
+    border: 2px solid black;
+    border-radius: 2px;
+    position: relative;
+    top: 8px;
+}
+.line2{
+    width: 230px;
+    border: 1px solid black;
+    border-radius: 2px;
+    position: relative;
+    top: 20px;   
+}
+.chasis2{
+    width: 52px;
+    height: 48px;
+    border: 2px solid black;
+    position: relative;
+    border-radius: 5px;
+    /* border-left: none; */
+    z-index: -1;
+    right: 12px;
+    background-color:#ffff00;
+    top: 91px;
+}
+.chasis3{
+    width: 52px;
+    height: 48px;
+    position: relative;
+    border-radius: 5px;
+    right: 80px;
+    background-color:#ffff00;
+    top: 91px;
+}
+.wheelbackground1{
+    width: 30px;
+    height: 15px;
+    background-color: #e6ffff;
+    border-radius: 150px 150px 0px 0px;
+    position: relative;
+    border: 1px solid black;
+    top: 35px;
+    left: 30px;
+}
+.wheelbackground2{
+    width: 30px;
+    height: 15px;
+    background-color: #e6ffff;
+    border-radius: 150px 150px 0px 0px;
+    position: relative;
+    border: 1px solid black;
+    top: 19px;
+    left: 220px;
+    z-index: 1;
+}
+.light1{
+    width: 12px;
+    height: 8px;
+    background-color:red;
+    position: relative;
+    border: 1px solid black;
+    top: 2px;
+    right: 6px;
+}
+.light2{
+    width: 12px;
+    height: 8px;
+    background-color:rgb(201, 231, 255);
+    position: relative;
+    border: 1px solid black;
+    bottom: 7px;
+    left: 285px;
+}
+.front{
+    width: 2px;
+    height: 16px;
+    background-color:rgb(59, 43, 20);
+    position: relative;
+    border: 1px solid black;
+    bottom: 40px;
+    left: 293px; 
+}
+.roundfront{
+    width: 2px;
+    height: 10px;
+    background-color:rgb(59, 43, 20);
+    border-radius: 80%;
+    position: relative;
+    border: 1px solid black;
+    z-index: -1;
+    bottom: 55px;
+    left: 295px;
+}
+.wheel1{
+    width: 18px;
+    height: 18px;
+    border: 6px solid black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 45px;
+    left: 31px;
+}
+.wheel2{
+    width: 16px;
+    height: 16px;
+    border: 6px solid black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 74px;
+    z-index: 1;
+    left: 222px;
+}
+.wheeldot1{
+    width: 1px;
+    background-color: black;
+    height: 1px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+.wheelline1{
+    width: 19px;
+    background-color: black;
+    height: 0px;
+    border: 1px solid black;
+    position: relative;
+    top: 5px;
+    right: 1px;   
+    transform: rotate(90deg);
+}
+.wheelline2{
+    width: 19px;
+    background-color: black;
+    height: 0px;
+    border: 1px solid black;
+    position: relative;
+    top: 3px;
+    right: 1px;   
+    transform: rotate(45deg);
+}
+.wheelline3{
+    width: 19px;
+    background-color: black;
+    height: 0px;
+    border: 1px solid black;
+    position: relative;
+    top: 1px;
+    right: 1px;   
+    transform: rotate(-45deg);
+}
+.wheeldot2{
+    width: 1px;
+    background-color: black;
+    height: 1px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    left: 6px;
+    z-index: 1;
+}
+.wheelline21{
+    width: 19px;
+    background-color: black;
+    height: 0px;
+    border: 1px solid black;
+    position: relative;
+    top: 5px;
+    right: 2px;   
+    transform: rotate(90deg);
+}
+.wheelline22{
+    width: 19px;
+    background-color: black;
+    height: 0px;
+    border: 1px solid black;
+    position: relative;
+    top: 3px;
+    right: 1px;   
+    transform: rotate(45deg);
+}
+.wheelline23{
+    width: 19px;
+    background-color: black;
+    height: 0px;
+    border: 1px solid black;
+    position: relative;
+    top: 0px;
+    right: 1px;   
+    transform: rotate(-45deg);
+}
