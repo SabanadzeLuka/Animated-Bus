@@ -5,29 +5,34 @@ body{
     background-repeat: repeat-x;
     animation-name: body;
     animation-timing-function: linear;
-    animation-duration: 30s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     overflow: hidden;
 
 }
-/* @keyframes body{
+@keyframes body{
     to {
         background-position: -5500px 0;
     }
-} */
+}
 .container{
-    width: 100vw;
-    height: 350px;
+    width: 500px;
+    height: 350px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid black;
+    position: relative;
+    animation-name: Container;
+    animation-timing-function: linear;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+
 }
 .chasis1{
     width: 250px;
     height: 90px;
     border: 2px solid black;
-    background-color: #ffff00;
+    background-color: #ffd000;
     border-radius: 8px;
     position: relative;
     top: 70px;
@@ -93,7 +98,7 @@ body{
     /* border-left: none; */
     z-index: -1;
     right: 12px;
-    background-color:#ffff00;
+    background-color:#ffd000;
     top: 91px;
 }
 .chasis3{
@@ -102,7 +107,7 @@ body{
     position: relative;
     border-radius: 5px;
     right: 80px;
-    background-color:#ffff00;
+    background-color:#ffd000;
     top: 91px;
 }
 .wheelbackground1{
@@ -172,6 +177,10 @@ body{
     position: relative;
     bottom: 45px;
     left: 31px;
+    animation-name: SpinningWheel1;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .wheel2{
     width: 16px;
@@ -182,6 +191,10 @@ body{
     bottom: 74px;
     z-index: 1;
     left: 222px;
+    animation-name: SpinningWheel2;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 .wheeldot1{
     width: 1px;
@@ -263,4 +276,30 @@ body{
     top: 0px;
     right: 1px;   
     transform: rotate(-45deg);
+}
+
+
+ @keyframes SpinningWheel1{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+@keyframes SpinningWheel2{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+@keyframes Container{
+    0%{
+        left: -2%;
+    }
+    100%{
+        left: 100%;
+    }
 }
